@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    font-family: 'Karla', sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    
+}
+.container {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+.head {
+    padding: 40px;
+}
+.head .main-title{
+color: hsl(179, 62%, 43%);
+font-size: 34px;
+margin-bottom:28px;
+}
+.head .yello-title {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 18px;;
+}
+.head p {
+    font-size: 18px;
+    color: #999;
+    margin:14px 0
+}
+
+.info {
+    display: flex;
+}
+.info div{
+    flex:1;
+}
+.left-block {
+    background-color:hsl(179, 62%, 43%) ;
+    color:#fff;
+    padding:40px;
+}
+.left-block h3 {
+    color: hsl(179, 43%, 75%);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+.left-block h3>span {
+    color: #fff;
+    font-size: 28px;
+    margin-right: 10px;
+}
+.left-block p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+button {
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 0;
+    width:100%;
+}
+.right-block {
+    background-color: hsl(179, 47%, 52%);
+    color: #fff;
+    padding: 40px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    opacity: 0.7;
+    margin-top:23px;
+}
+ul li {
+    line-height: 25px;
+}
+@media screen and (max-width: 600px) {
+    .info {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+}
+body{
+    /* max-width:1440px; */
+    font-family:'Poppins',sans-serif;
+    max-width:1440px;
+    margin:0 auto;
+    background-color: hsl(0, 0%, 98%);
+    box-sizing: border-box;
+}
+.header {
+    max-width: 600px;
+    margin:50px auto 50px;
+    text-align: center;
+}
+.upper {
+    margin:0 auto;
+    width:500px;
+    font-weight: 200;
+    font-family: Poppins;
+}
+.lower {
+    margin: 0 auto;
+    width:500px;
+    font-weight:600;
+}
+.header p {
+    margin: 0 auto;
+    width: 505px;
+    color:hsl(229, 6%, 66%);
+    margin-top: 20px;
+}
+.container {
+    /* max-width: 1140px; */
+    max-width:100%;  /*1440PX*/
+    /* background:pink; */
+    position:relative;
+    margin: 70PX auto 0;
+    height:652px;
+    
+}
+.container div {
+    width:350px;
+    height: 250px;
+    padding: 35PX 30px 0;
+    border-radius: 5px;
+    background-color:hsl(0, 0%, 98%) ;
+    position: absolute;
+    /* margin:30px; */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.09),0 6px 6px rgba(0,0,0,0.09);
+}
+.container .top-bar {
+    width:100%;
+    border-radius: 5px 5px 0 0 ;
+    height:4px;
+    padding:0;
+    box-shadow: none;
+}
+.green .top-bar {
+    background-color: hsl(180, 62%, 55%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.red .top-bar {
+    background-color:hsl(0, 78%, 62%);
+    top: 0;
+    left: 0;
+}
+.yellow .top-bar {
+    background-color: hsl(34, 97%, 64%);
+    top: 0;
+    left: 0;
+}
+.blue .top-bar {
+    background-color: hsl(212, 86%, 64%);
+    top: 0;
+    left: 0;
+}
+.container h1 {
+    font-size: 22px;
+
+}
+.container p {
+    font-size: 14px;
+    color: hsl(229, 6%, 66%);
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.container img {
+    display: block;
+    width:78px;
+    height:78px;
+    margin-top: 46px;
+    margin-left: 255px;
+    margin-bottom: 30px;
+}
+.red {
+    left:0;
+    right:0;
+    margin: 0 auto;
+}
+.yellow {
+    left: 0;
+    right: 0;
+    /* top:341px; */
+    bottom: 0PX;
+    margin: 30PX auto 45PX;
+    
+}
+.green{
+    top:0;
+    bottom: 0;
+    left: 165px;
+    margin: auto 60px;
+    left:10px;
+    
+}
+.blue {
+    top: 0;
+    right: 165px;
+        bottom: 0; 
+        margin: auto 60px;
+        right: 10px;
+} 
+footer {
+    text-align: center;
+    color:hsl(229, 6%, 66%);
+    margin-top: 20px;
+}
