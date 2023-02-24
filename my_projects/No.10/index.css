@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+/* img {
+    width: 100%;
+    max-width: 100%;
+} */
+p {
+    font-size: 18px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Almost-White);
+}
+.container{
+    max-width: 1440px;
+    padding: 32px 40px;
+    margin: 0 auto;
+    height: 100%;
+}
+.header {
+    display:flex;
+    justify-content: space-between;
+    /* padding: 22px 0; */
+}
+.head-left {
+    display: flex;
+}
+.logo {
+    margin-right: 63px;
+}
+.nav{
+    display: flex;
+    color:var(--Medium-Gray);
+}
+.nav div {
+    margin-right: 40px;
+    cursor: pointer;
+}
+.nav div span:hover {
+    color: var(--Almost-Black);
+}
+.nav div.feature {
+    position: relative;
+}
+.dropdown_feature {
+    display: none;
+    background-color: var(--Almost-White);
+    padding: 26px 26px;
+    position: absolute;
+    border-radius: 10px;
+    border:none;
+    top: 35px;
+    left: -70px;
+    box-shadow:0px 0px 30px hsl(0, 1%, 73%);
+    animation-name: dropdownfeature;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+.dropdown_feature ul {
+    list-style: none;
+    font-size: 14px;
+}
+.dropdown_feature ul li {
+    display: flex;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+.dropdown_feature li:hover {
+    color: var(--Almost-Black);
+}
+.dropdown_feature ul li:last-child {
+    margin-bottom: 0px;
+}
+.dropdown_feature ul img{
+    /* width: 100%;
+    max-width: 100%; */
+    margin-right: 17px;
+}
+.feature:hover .dropdown_feature {
+    display: block;
+}
+.nav div.company {
+    position: relative;
+}
+.dropdown_company {
+    display: none;
+    background-color: var(--Almost-White);
+    border: none;
+    padding: 26px 26px;
+    border-radius: 10px;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    box-shadow: 0px 0px 30px hsl(0, 1%, 73%);
+    animation-name: dropdowncompany;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    animation-duration: 0.5s;
+}
+.dropdown_company ul {
+    list-style: none;
+    font-size: 14px;
+}
+.dropdown_company ul li {
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+.dropdown_company li:hover {
+    color: var(--Almost-Black);
+}
+.dropdown_company ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.company:hover .dropdown_company {
+    display: block;
+}
+.head-right {
+    display: flex;
+}
+.head-right button{
+    /* width: 104px;
+    height: 40px; */
+    padding: 14px 23px;
+    font-size: 15px;
+    color:var(--Medium-Gray);
+    font-weight: 500;
+    background-color:var(--Almost-White);
+    border:  2px solid var(--Medium-Gray);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.head-right button.login {
+    border: none;
+}
+.main {
+    display: flex;
+    margin-top: 68px;
+    padding: 0 60px;
+    /* justify-content: space-between; */
+}
+/* .main > * {
+    flex:1;
+} */
+.main-left {
+    max-width: 513px;
+    margin-right: 152px;
+}
+.left_content h1 {
+    margin-top: 103px;
+    font-size: 72px;
+    font-weight: 700;
+}
+.left_content p {
+    margin-top: 70px;
+    font-size: 20px;
+    color:var(--Medium-Gray);
+    line-height:1.6;
+}
+.left_content button {
+    margin-top: 55px;
+    background-color:var(--Almost-Black);
+    color: var(--Almost-White);
+    font-size: 23px;
+    font-weight: 500;
+    border:1px solid var(--Almost-Black);
+    border-radius: 15px;
+    padding: 23px 30px;
+    cursor: pointer;
+    
+}
+.left_content button:active {
+    color: var(--Almost-Black);
+    background-color: var(--Almost-White);
+    border: 1px solid var(--Almost-Black);
+}
+.foot-mark ul{
+    margin-top: 105px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.foot-mark ul img {
+    width: 100%;
+    max-width: 100%;
+}
+.main-right {
+    max-width: 500px;
+}
+.main-right img{
+    width: 100%;
+    max-width: 100%;
+}
+
+@keyframes dropdownfeature {
+    from{
+        /* height: 0; */
+        transform: scaleY(0);
+        transform-origin: center top;
+    }
+    to{
+        /* height: 160px; */
+        transform: scaleY(1);
+    }
+}
+
+@keyframes dropdowncompany {
+    from {
+        transform: scaleY(0);
+        transform-origin: center top;
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="head-left">
+        <div class="logo">
+          <img src="images/logo.svg" alt="LOGO">
+        </div>
+        <div class="nav">
+          <div class="feature" id="feature">
+            <span>Features</span>
+            <img id= "feature_picture" src="images/icon-arrow-down.svg" alt="">
+            <div class="dropdown_feature" id="dropdown_feature">
+              <ul>
+                <li><img src="images/icon-todo.svg"></img>Todo List</li>
+                <li><img src="images/icon-calendar.svg"></img>Calender</li>
+                <li><img src="images/icon-reminders.svg"></img>Reminders</li>
+                <li><img src="images/icon-planning.svg"></img>Planning</li>
+              </ul>
+            </div>
+          </div>
+          <div class="company" id="company">
+            <span>Company</span>
+            <img id="company_picture" src="images/icon-arrow-down.svg" alt="">
+            <div class="dropdown_company" id="dropdown_company">
+              <ul>
+                <li>History</li>
+                <li style="white-space:nowrap;">Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+          </div>
+          <div><span>Careers</span></div>
+          <div><span>About</span></div>
+        </div>
+      </div>
+      <div class="head-right">
+        <button class="login">Login</button>
+        <button class="register">Register</button>
+        </div>
+    </div>  
+    <div class="main">
+      <div class="main-left">
+        <div class="left_content">
+          <h1>Make<br>remote work</h1>
+          <p>
+            Get your team in sync, no matter your location.<br> Streamline processes,
+            create team rituals,<br> and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+          <div class="foot-mark">
+            <ul>
+              <li><img src="images/client-databiz.svg"></img></li>
+              <li><img src="images/client-audiophile.svg"></img></li>
+              <li><img src="images/client-meet.svg"></img></li>
+              <li><img src="images/client-maker.svg"></img></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-right">
+        <img src="images/image-hero-desktop.png" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
