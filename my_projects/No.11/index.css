@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --Light-Cyan:hsl(193, 38%, 86%);
+    --Neon-Green:hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    font-size: 28px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--Dark-Blue);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* margin: 0 auto; */
+    /* padding: 0 15px; */
+}
+.advice_box {
+    background-color:var(--Dark-Grayish-Blue);
+    color: var(--Light-Cyan);
+    padding:35px 45px;
+    max-width: 540px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.adviceid_part {
+    color:var(--Neon-Green);
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.advice_content {
+    font-weight: 800;
+}
+.divider_part_mobile {
+    display: none;
+}
+.divider {
+    margin-bottom: 30px;
+}
+button {
+    background-color:var(--Neon-Green);
+    border: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    padding: 21px 21px 21px 20px;
+    bottom:-32px;
+}
+button:hover {
+    box-shadow: 0 0 50px var(--Neon-Green);
+}
+
+@media screen and (max-width: 540px) {
+    .advice_box {
+        max-width: 342px;
+    }
+}
